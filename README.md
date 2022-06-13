@@ -75,7 +75,7 @@ Launches the test runner in the interactive watch mode
 | Parameter  | Type     | Description                    |
 | :--------- | :------- | :----------------------------- |
 | `postCode` | `string` | **Required**. Name Of postcode
-| `limit`    | `number` | **Optional**  limit= (not required) Limits number of postcodes matches to return. Defaults to 10. Needs to be less than 100.         
+        
 
 #### Get Postcode Details
 
@@ -86,3 +86,5 @@ Launches the test runner in the interactive watch mode
 | Parameter     | Type     | Description                                   |
 | :------------ | :------- | :-------------------------------------------- |
 | `SearchValue` | `string` | **Required**. partial postcode value to fetch |
+| `limit`    | `number` | **Optional**  limit= (not required) Limits number of postcodes matches to return. Defaults to 10. Needs to be less than 100. 
+
