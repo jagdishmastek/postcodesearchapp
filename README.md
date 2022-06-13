@@ -14,11 +14,19 @@ CD to cloned directory
 Run the following commands to install dependencies
 ## Note ## 
 You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine. 
-Please check the node & npm version if your machin already installed. For checking node & npm version.
+Please check the node & npm version if your machin node already installed. 
+
+
+
+## For checking node & npm version. ##
 Please use below mentioned command.
 Node Version:- `node --version`
 Npm Version:- `npm --version`
-To install dependencies `npm install`
+
+
+
+## To install dependencies ##
+`npm install`
 
 
 ## Run application ##
