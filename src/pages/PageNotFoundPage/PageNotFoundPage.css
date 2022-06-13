@@ -1,0 +1,50 @@
+.page-content {
+    margin-top: -20.5vh;
+}
+.pagecontent-container {
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
+    height: 70vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pagecontent-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagecontent-footer p {
+    font-weight: 600;
+    color: grey
+}
+
+.pagecontent-footer a {
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+   
+}
+
+.pagecontent-footer a:hover
+{   
+  font-weight: 600;
+  text-decoration: none;
+  color: grey;
+}
+
+.pagecontent-div {
+    margin: auto;
+    width: 100%;   
+    padding: 10px;
+    text-align: center;
+    color: grey;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+}

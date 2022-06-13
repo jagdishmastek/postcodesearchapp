@@ -1,0 +1,62 @@
+.todolist-container {
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.todos-container {
+  
+    height: 90%;
+    
+}
+
+.todo-item {
+    border-bottom: .05rem solid rgba(0, 0, 0, 0.082);
+    padding: 1rem 0;
+    cursor: pointer;
+    width: 50%;
+}
+
+.todo-item-active {
+    
+    color: grey
+}
+
+.postcode-location{
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
+    text-align: center;
+}
+
+.postcode-container {
+    width: 100%;    
+    /*border: 1px #000 solid;*/
+    margin: 15px 0px 15px 0px;
+   
+}
+
+.grid-striped .row:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+    
+}
+
+.map-container {
+    height: 250px;
+    width: 100%;    
+    /*border: 1px #000 solid;*/
+    margin: 15px 0px 15px 0px;
+    padding: 5px;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+  }
+
