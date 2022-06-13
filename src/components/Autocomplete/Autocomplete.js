@@ -3,31 +3,39 @@ import { useDispatch, useSelector } from "react-redux";
 import "./Autocomplete.css";
 import { getPostCodesData, getPostCodesDetailsData, drawerOpenClick } from "../../store/actions";
 
+/**
+ * This component use to display the auto suggestion in textbox
+ * 
+ */
 
 const Autocomplete = () => {    
+     //Dispatch action
     const dispatch = useDispatch();
+
+     //setting the local state
     const [activeSuggestion, setActiveSuggestion] = useState(0);
     const [filteredSuggestions, setFlteredSuggestions] = useState([]);
     const [suggestions, setSuggestions] = useState([]);
     const [showSuggestions, setShowSuggestions] = useState(true);
     const [userInput, setUserInput] = useState("");
 
+
+    //select state from store
     const { postCodesData} = useSelector((state) => ({      
       postCodesData: state.postCodes.postCodesData
       
     }));
 
-    
-    useEffect(() => {
-     
-      if(postCodesData){
-        
+    // setting the local state from store state
+    useEffect(() => {     
+      if(postCodesData){        
         setSuggestions(postCodesData);
         setFlteredSuggestions(postCodesData);
       }
     }, [postCodesData]);
    
 
+  //Fetch postcode autocomplete api
    const onChange = e => {    
     const userInput = e.currentTarget.value.trim();
     if(userInput !== ""){
@@ -40,6 +48,7 @@ const Autocomplete = () => {
     setUserInput(e.currentTarget.value);
 };
 
+//Fetch postcode autocomplete details api & show the details on UI
 const onClick = e => {
     setActiveSuggestion(0);
     setFlteredSuggestions([]);
@@ -49,7 +58,7 @@ const onClick = e => {
     setUserInput(e.currentTarget.innerText);    
 };
 
-
+//It's genrate the autosuggestion options & display on UI
 let suggestionsListComponent;
 
     if (showSuggestions && userInput) {
@@ -96,6 +105,4 @@ let suggestionsListComponent;
 
 }
 
-
-
-  export default Autocomplete;
+export default Autocomplete;

@@ -6,6 +6,12 @@ import { faFaceFrown } from '@fortawesome/free-solid-svg-icons';
 import Header from "../../components/Header/Header";
 import "./PageNotFoundPage.css";
 
+/**
+ * This component use to show page not found page on UI
+ * 
+ */
+
+
 const PageNotFoundPage = () => {
     let title = "Page Not Found";   
     let contentText = "The page you looking for dosen't exist.";

@@ -2,6 +2,11 @@ import React from 'react';
 import "./Header.css";
 import PropTypes from 'prop-types';
 
+/**
+ * This component use to display header with text on UI
+ * 
+ */
+
 const Header = ({
     title
 }) => {
@@ -11,6 +16,8 @@ const Header = ({
         </>
     )
 }
+
+// validating the prop type
 
 Header.propTypes = {
     title: PropTypes.string.isRequired

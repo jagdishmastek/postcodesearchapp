@@ -2,6 +2,11 @@ import React, {useEffect} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 
+/**
+ * This component check the axios response on every request
+ * if any error found, it will redirect to error page
+ * 
+ */
 
 const CheckRequests= Wrapped => {
     

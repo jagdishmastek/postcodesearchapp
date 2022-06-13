@@ -1,23 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import AddInput from '../AddInput/AddInput'
 import Header from '../Header/Header'
 import PostcodesDetails from '../PostcodesDetails/PostcodesDetails';
 import "./Postcodes.css"
 
-function Postcodes() {
+/**
+* This component use to show post code input & details page on UI
+* 
+*/
 
-    const [todos, setTodos] = useState([])
-
+const Postcodes = () =>{
     return (
         <div className="todo">
             <Header title="Postcode Search" />
-            <AddInput 
-                setTodos={setTodos}
-                todos={todos}
-            />
+            <AddInput />
             <PostcodesDetails/>
         </div>
     )
 }
 
-export default Postcodes
+export default Postcodes;

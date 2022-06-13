@@ -5,12 +5,12 @@ const initialState = {
 };
 
 const dashboardReducers = (state = initialState, action) => {
-  switch (action.type) {
-    case DASHBOARD_DRAWER_OPEN:
-      return {
-        ...state,
-        drawerOpen: action.drawerOpen
-      };
+switch (action.type) {
+  case DASHBOARD_DRAWER_OPEN:
+    return {
+      ...state,
+      drawerOpen: action.drawerOpen
+    };
     default:
       return state;
   }

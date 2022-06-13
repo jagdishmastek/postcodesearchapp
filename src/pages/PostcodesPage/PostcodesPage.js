@@ -2,7 +2,12 @@ import React from 'react'
 import { Container } from "react-bootstrap"
 import Postcodes from "../../components/Postcodes/Postcodes"
 
-export default function PostcodesPage() {
+/**
+* This component use to show post code page on UI
+* 
+*/
+
+ const  PostcodesPage = () => {
     return (
         <div>
             <Container>
@@ -11,3 +16,5 @@ export default function PostcodesPage() {
         </div>
     )
 }
+
+export default PostcodesPage;

@@ -5,11 +5,19 @@ import Collapse from 'react-bootstrap/Collapse';
 import MapDiv from "../MapDiv/MapDiv";
 import {getLocation} from "../../utils/Utils";
 
-
+/**
+ * This component use to display the post code details on UI
+ * 
+ */
 
 const PostcodesDetails = () => {   
+     //setting the local state
     const [postCodeInfo, setpostCodeInfo] = useState({});   
+
+    //select state from store
     const [location, setLocation] = useState(""); 
+
+   //select state from store
     const { drawerOpenFlag, postCodeDetails, loading  } = useSelector((state) => ({
         drawerOpenFlag: state.dashboard.drawerOpen,       
         postCodeDetails: state.postCodes.postCodeDetilas,
@@ -17,13 +25,13 @@ const PostcodesDetails = () => {
       }));
 
     
-
+   
     let divFlag = drawerOpenFlag;
    
     
     
     let center = [postCodeInfo.latitude, postCodeInfo.longitude]
-    
+     // setting the local state from store state
     useEffect(()=>{
         if (postCodeDetails.latitude < 52.229466) {
             setLocation(getLocation.South);
